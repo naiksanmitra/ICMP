@@ -309,8 +309,8 @@ s0 : checksum<=16'b0;
 s1 : checksum<=~(m0[15:0]);
 s2 : checksum<=checksum+(~(m1[31:16]))+(~(m1[15:0])); 
 s3 : checksum<=checksum+(~(m2[31:16] ))+(~(m2[15:0] ));
-s4 : checksum<=checksum+(~(m3[31:16] ))+(~(m3[31:16] ));
-s5 : checksum<=checksum+(~(m4[31:16] ))+(~(m4[31:16] ));
+s4 : checksum<=checksum+(~(m3[31:16] ))+(~(m3[15:0] ));
+s5 : checksum<=checksum+(~(m4[31:16] ))+(~(m4[15:0] ));
 s6 : checksum<=~checksum;
 s7 : begin
      end
